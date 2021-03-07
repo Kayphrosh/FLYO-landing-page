@@ -22,6 +22,7 @@ a {
 .heroe {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: hsl(217, 28%, 15%);
     min-height: 100vh;
     width: 100%;
@@ -48,7 +49,7 @@ header {
     justify-content: space-between;
     position: relative;
     align-items: center;
-    width: 250px;
+    width: 300px;
     height: 100%;
     overflow: hidden;
 }
@@ -130,6 +131,9 @@ header {
     border-color: hsl(0, 0%, 100%);
     background-color: transparent;
     transform: scale(0.9);
+}
+.heroe-text button:focus, #newsletter button:focus, #sign-in:focus {
+    outline: none;
 }
  /* --------------------END OF HEROE SECTION------------------------ */
 
@@ -225,7 +229,6 @@ header {
     align-items: center;
     position: relative;
     padding: 2rem 4rem;
-    padding-bottom: 30vh;
 }
 .quote {
     background-color: hsl(219, 30%, 18%);
@@ -272,7 +275,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    position: absolute;
+    top: 15%;
     width: 800px;
     height: 200px;
     background-color: hsl(219, 30%, 18%);
@@ -302,6 +306,7 @@ header {
 #newsletter input:focus {
     border: 2px solid hsl(198, 60%, 50%);
     background-color: transparent;
+    outline: none;
 }
 #newsletter button {
     padding: 10px 30px;
@@ -322,9 +327,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     background-color: hsl(216, 53%, 9%);
+    position: relative;
     align-items: center;
     padding: 3rem;
-    padding-top: 30vh;
+    padding-top: 400px;
+}
+.spacer {
+    width: 100%;
+    height: 200px;
+    background-color: hsl(218, 28%, 13%);
+    position: absolute;
+    top: 0;
 }
 .footer-logo {
     align-self: flex-start;
@@ -404,7 +417,10 @@ footer {
 }
 @media (max-width: 768px) {
     header {
-        padding: 20px;
+        padding: 20px 10px;
+    }
+    .nav-bar {
+        width: 100%;
     }
     .nav-bar ul {
         width: 100%;
@@ -432,7 +448,7 @@ footer {
         flex-direction: column;
         gap: 0;
         padding: 3rem 1rem;
-        padding-bottom: 30vh;
+
     }
     .quote {
         width: 100%;
@@ -443,6 +459,7 @@ footer {
         left: 16px;
     }
     .newsletter {
+        top: 8%;
         width: 90%;
         margin: 0 1rem;
     }
@@ -456,8 +473,15 @@ footer {
         margin-top: 30px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .heroe-text {
         background-image: url(./images/bg-curvy-mobile.svg);
+    }
+    .logo {
+        flex-basis: 40%;
+    }
+    .nav-bar {
+        flex-basis: 70%;
+        width: 100%;
     }
 }
