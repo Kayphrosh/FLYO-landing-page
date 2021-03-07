@@ -312,7 +312,7 @@ header {
     outline: none;
 }
 #newsletter button {
-    padding: 10px 0px;
+    padding: 10px 15px;
     border-radius: 30px;
     border: 2px solid hsl(198, 60%, 50%);
     background-color: hsl(198, 60%, 50%);
@@ -468,7 +468,7 @@ footer {
         width: 90%;
         margin: 0 1rem;
     }
-    #newswletter {
+    #newsletter {
         padding: 0 20px;
     }
     .quick-links {
