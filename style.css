@@ -73,7 +73,7 @@ header {
 #sign-in {
     align-items: center;
     border: 2px solid hsl(198, 60%, 50%);
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: transparent;
     color: #fff;
     overflow: hidden;
