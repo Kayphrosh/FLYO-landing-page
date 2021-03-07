@@ -278,20 +278,23 @@ header {
     position: absolute;
     top: 15%;
     width: 800px;
-    height: 200px;
+    min-height: 190px;
     background-color: hsl(219, 30%, 18%);
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 3rem;
     text-align: center;
 }
 .newsletter h4 {
     font-size: 24px;
+    margin-bottom: 10px;
 }
 .newsletter p {
     line-height: 1.2rem;
+    margin-bottom: 10px;
 }
 #newsletter {
     display: flex;
+    padding: 0 4rem;
 }
 #newsletter input {
     border: 2px solid hsl(0, 0%, 100%);
@@ -309,7 +312,7 @@ header {
     outline: none;
 }
 #newsletter button {
-    padding: 10px 30px;
+    padding: 10px 0px;
     border-radius: 30px;
     border: 2px solid hsl(198, 60%, 50%);
     background-color: hsl(198, 60%, 50%);
@@ -459,9 +462,14 @@ footer {
         left: 16px;
     }
     .newsletter {
+        min-height: 210px;
+        padding: 20px 10px;
         top: 8%;
         width: 90%;
         margin: 0 1rem;
+    }
+    #newswletter {
+        padding: 0 20px;
     }
     .quick-links {
         flex-direction: column;
